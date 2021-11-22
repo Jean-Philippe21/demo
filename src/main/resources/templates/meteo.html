@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meteo</title>
+    <div th:replace="~{addresses::fragment-css}" >
+
+    </div>
+</head>
+<body>
+
+    <div th:replace="~{addresses::fragment-nav-bar}">
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <p th:text=${data}></p>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p th:text=${comment}> </p>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p th:text=${data_2}></p>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--p-- th:text=${commente2}></p-->
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--p-- th:text=${response}></p-->
+
+</body>
+</html>

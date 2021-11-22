@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <div th:replace="~{addresses::fragment-css}" >
+
+    </div>
+</head>
+<body>
+    <div th:replace="~{addresses::fragment-nav-bar}">
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <form action ="/meteo" method ="post">
+        <div>
+            <label for ="address"> Please input your
+                adress : </label>
+            <input name ="address" id="address">
+        </div>
+        <div>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button> Get the weather at the given
+                address ! </button>
+        </div>
+    </form>
+</body>
+</html>
